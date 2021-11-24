@@ -1,4 +1,4 @@
-# provided
+# Not my work. Thanks and credit to Alberto Quattrini Li.
 import chess
 
 class HumanPlayer():
