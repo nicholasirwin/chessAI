@@ -1,9 +1,16 @@
+# AlphaBetaAI - Adversarial search for chess using pruning. Uses a material heuristic evaluation function.
+#               Features python's chess library to store game state.
+#
+# Inputs: search depth and boolean for player's color (white = True, black = False)
+#
+# Author: Nicholas Irwin, October 2021
+
 import chess
 import random
 import math
 
 
-class AlphaBetaAI():
+class AlphaBetaAI:
     def __init__(self, depth, color):
         self.depth = depth
         self.color = color      # true for white, false for black

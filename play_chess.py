@@ -1,3 +1,11 @@
+# play_chess - Interactive program to play chess at the command line. Can select any player1 player2 combination of
+#              'human', 'random', 'minimax', 'alphabeta' with depth < 6.
+#
+# Inputs: python3 play_chess.py [player1] [depth1] [player2] [depth2]
+#
+# Author: Nicholas Irwin, October 2021
+
+
 import random, sys
 from ChessGame import ChessGame
 from MinimaxAI import MinimaxAI
@@ -5,7 +13,6 @@ from AlphaBetaAI import AlphaBetaAI
 from HumanPlayer import HumanPlayer
 from RandomAI import RandomAI
 
-# python3 play_chess.py player1 depth1 player2 depth2
 if __name__ == "__main__":
 
     if len(sys.argv) != 5:

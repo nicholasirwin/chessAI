@@ -1,4 +1,9 @@
-import chess
+# test_chess - Script to run a variety of tests on adversarial search methods.
+#
+# Usage: Simply uncomment ONE test and then run the program.
+#
+# Author: Nicholas Irwin, October 2021
+
 from RandomAI import RandomAI
 from HumanPlayer import HumanPlayer
 from MinimaxAI import MinimaxAI
@@ -34,54 +39,54 @@ player1 = RandomAI()
 player2 = AlphaBetaAI(3, False)
 
 ## test 6 [alpha-beta deeper]: AlphaBetaAI vs. RandomAI (depth 4)
-player1 = AlphaBetaAI(4, True)
-player2 = RandomAI()
+# player1 = AlphaBetaAI(4, True)
+# player2 = RandomAI()
 
 ## test 7 [alpha-beta deeper]: AlphaBetaAI vs. RandomAI (depth 5)
-player1 = AlphaBetaAI(5, True)
-player2 = RandomAI()
+# player1 = AlphaBetaAI(5, True)
+# player2 = RandomAI()
 
 # ---------------------------------------------------------------------------------------------------------------------
 
 ## test 8 [same depth]: MinimaxAI vs. AlphaBetaAI (depth 2)
 ## run a few times, make sure that minimax does not consistently win
-player1 = AlphaBetaAI(2, True)
-player2 = MinimaxAI(2, False)
+# player1 = AlphaBetaAI(2, True)
+# player2 = MinimaxAI(2, False)
 
 ## test 9 [same depth]: MinimaxAI vs. AlphaBetaAI (depth 3)
 ## run a few times, make sure that minimax does not consistently win
-player1 = AlphaBetaAI(3, True)
-player2 = MinimaxAI(3, False)
+# player1 = AlphaBetaAI(3, True)
+# player2 = MinimaxAI(3, False)
 
 # ---------------------------------------------------------------------------------------------------------------------
 
 ## test 10.1 [same value]: MinimaxAI vs. HumanPlayer (depth 3)
 ## check that the values are exact same for MinimaxAI and AlphaBetaAI given same initial state
-player1 = HumanPlayer()
-player2 = MinimaxAI(3, False)
+# player1 = HumanPlayer()
+# player2 = MinimaxAI(3, False)
 
 ## test 10.2 [same value]: AlphaBetaAI vs. HumanPlayer (depth 3)
 ## check that the values are exact same for MinimaxAI and AlphaBetaAI given same initial state
-player1 = HumanPlayer()
-player2 = AlphaBetaAI(3, False)
+# player1 = HumanPlayer()
+# player2 = AlphaBetaAI(3, False)
 
 # ---------------------------------------------------------------------------------------------------------------------
 
 ## test 11: Iterative deepening (depth 3)
 ## Verify that for some start states, best_move changes (and hopefully improves) as deeper levels are searched.
-player1 = IterativeDeepeningAI(3, True)
-player2 = RandomAI()
+# player1 = IterativeDeepeningAI(3, True)
+# player2 = RandomAI()
 
 ## test 12: Iterative deepening (depth 4)
 ## Verify that for some start states, best_move changes (and hopefully improves) as deeper levels are searched.
-player1 = IterativeDeepeningAI(4, True)
-player2 = RandomAI()
+# player1 = IterativeDeepeningAI(4, True)
+# player2 = RandomAI()
 
 # ---------------------------------------------------------------------------------------------------------------------
 
 ## test 13: Me vs. AlphaBetaAI
-player1 = HumanPlayer()
-player2 = AlphaBetaAI(4, False)
+# player1 = HumanPlayer()
+# player2 = AlphaBetaAI(4, False)
 
 game = ChessGame(player1, player2)
 
