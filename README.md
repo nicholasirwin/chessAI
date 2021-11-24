@@ -8,7 +8,7 @@ CONTENTS OF THIS FILE
 
 INTRODUCTION
 ------------
-In this project, I write a program for playing chess using two adversarial search methods, minimax and minimax with alpha-beta pruning. I use the Python chess package (https://pypi.org/project/python-chess/) to wrap the game. The game can be visualized and played at the command line following the instructions below.
+In this project, I write a program for playing chess using two adversarial search methods: minimax and minimax with alpha-beta pruning. I use the Python chess package (https://pypi.org/project/python-chess/) to wrap the game. The game can be visualized and played at the command line following the instructions below.
 
 METHODS
 ------------
